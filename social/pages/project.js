@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FeedCard from "../components/FeedCard";
 import Sidebar from "../components/Sidebar";
 import Moment from "react-moment";
-import Image from 'next/image';
+import Image from "next/image";
 // creating another comp for status
 
 function Status({ title, color }) {
@@ -24,24 +24,26 @@ function project(props) {
     <div className="flex relative">
       <Sidebar />
       <div className="bg-[#f6f7f8] w-full flex flex-col">
-       <div className="flex items-center justify-between">
-       <div className="flex items-center space-x-4 m-5">
-          <Status title="Published" color="bg-[#acacac]" />
-          <Status title="Scheduled" color="bg-[#65be88]" />
-          <Status title="Need Approval" color="bg-[#eec054]" />
-          <Status title="Error" color="bg-[#e96e58]" />
-          <Status title="Notes" color="bg-[#74a7e1]" />
+        <div className="flex items-center justify-between">
+          <div className="flex items-center space-x-4 m-5">
+            <Status title="Published" color="bg-[#acacac]" />
+            <Status title="Scheduled" color="bg-[#65be88]" />
+            <Status title="Need Approval" color="bg-[#eec054]" />
+            <Status title="Error" color="bg-[#e96e58]" />
+            <Status title="Notes" color="bg-[#74a7e1]" />
+          </div>
+          <div className="mr-5 relative h-12 w-12 rounded-full overflow-hidden m-2 cursor-pointer">
+            <Image src="/avatar.jpeg" layout="fill" objectFit="cover" />
+          </div>
         </div>
-        <div className="mr-5 relative h-12 w-12 rounded-full overflow-hidden m-2 cursor-pointer">
-          <Image src='/avatar.jpeg' layout="fill" objectFit="cover" />
-        </div>
-       </div>
         <div className="flex flex-col">
           {dates.map((i, index) => (
             <div key={index}>
-              <h2 className="text-xl text-zinc-500 m-5"><Moment format="DD MMMM YYYY" withTitle={true}>
-              {i}
-            </Moment></h2>
+              <h2 className="text-xl text-zinc-500 m-5">
+                <Moment format="DD MMMM YYYY" withTitle={true}>
+                  {i}
+                </Moment>
+              </h2>
               <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 mx-5 ">
                 {values[index].map((j, index) => (
                   <div key={index}>
@@ -59,11 +61,9 @@ function project(props) {
                   </div>
                 ))}
               </div>
-
             </div>
           ))}
         </div>
-        
       </div>
     </div>
   );
@@ -72,6 +72,8 @@ function project(props) {
 export default project;
 
 export async function getStaticProps(context) {
+
+  // Fetch data from external API
   const posts = {
     posts_by_date: {
       "2021-06-17": [

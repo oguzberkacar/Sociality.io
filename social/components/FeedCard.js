@@ -9,11 +9,11 @@ import {
   CheckIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import Moment from "react-moment";
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+// Function to render post stats
 function PostStat(Icon, count) {
   return (
     <div className="flex items-center">
@@ -36,9 +36,11 @@ function FeedCard({
 }) {
   // removing https:// link from entrey message
   const message = Entry.message.replace(/https?:\/\/\S+/g, "");
+  // geting the link from entry message
   let matches = Entry.message.match(/\bhttp?:\/\/\S+/gi);
+
+  // link state for handling error
   const [link, setLink] = useState(Entry.image[0]);
-  console.log(Entry);
 
   return (
     <div className="flex w-full border-2 max-w-xs  overflow-hidden rounded-xl ">
@@ -88,7 +90,6 @@ function FeedCard({
             src={link}
             objectFit="cover"
             layout="fill"
-          
             onError={() => {
               setLink("/no-post-image.png");
             }}
