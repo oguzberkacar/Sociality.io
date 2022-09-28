@@ -47,7 +47,7 @@ export const AccordionNormal = ({ list }) => {
 const Context = React.createContext({});
 
 function Accordion({ children }) {
-  const [selected, setSelected] = React.useState();
+  const [selected, setSelected] = React.useState(2);
 
   const toggleItem = React.useCallback(
     (id) => () => {

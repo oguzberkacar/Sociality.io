@@ -35,7 +35,7 @@ function project(props) {
             <Image src="/avatar.jpeg" layout="fill" objectFit="cover" />
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-10">
           {dates.map((i, index) => (
             <div key={index}>
               <h2 className="text-xl text-zinc-500 m-5">
