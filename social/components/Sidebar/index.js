@@ -12,7 +12,7 @@ const DATA_CHANNEL = [
   { id: 5, image: "/dalle-1.webp" },
 ];
 
-function index() {
+function Index() {
   const [ActiveChannel, setActiveChannel] = useState(3);
 
   return (
@@ -50,4 +50,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
