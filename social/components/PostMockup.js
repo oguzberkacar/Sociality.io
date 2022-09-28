@@ -48,7 +48,7 @@ function PostMockup() {
             I used Hero Icons for new design.
           </h3>
           <p className="dark:text-white text-2xl">
-            It's fits for all platforms and i used that set for few project.
+            It&apos;s fits for all platforms and i used that set for few project.
           </p>
           <p className="dark:text-white text-2xl">
             Because of that i can find easily an icon that i need.
