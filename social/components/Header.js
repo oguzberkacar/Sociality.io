@@ -67,7 +67,7 @@ function ModeToggle() {
 }
 function Header() {
   return (
-    <div className='flex justify-between px-20 py-5 border-b bg-zinc-100 items-center dark:bg-zinc-900 dark:border-zinc-600 shadow-md'>
+    <div className='flex justify-between px-20 py-2 border-b bg-zinc-100 items-center dark:bg-zinc-900 dark:border-zinc-600 shadow-md'>
       <div className='text-black dark:text-white'>This website created by Oğuz Berk Açar for demo.</div>
       <div className='flex space-x-4 items-center justify-center'>
         <p className='text-black dark:text-white'>Change Color Mode</p>

@@ -19,7 +19,6 @@ function project(props) {
   const dates = Object.keys(post);
   const values = Object.values(post);
 
-  console.log(values[0]);
   return (
     <div className="flex relative">
       <Sidebar />
