@@ -79,6 +79,7 @@ function FeedCard({
             <a
               className="cursor-pointer text-blue-600"
               target={"_blank"}
+              rel="noreferrer"
               href={matches}
             >
               {matches}

@@ -13,7 +13,7 @@ const DATA_CHANNEL = [
 ];
 
 function index() {
-  const [activeChannel, setActiveChannel] = useState(3);
+  const [ActiveChannel, setActiveChannel] = useState(3);
 
   return (
     <div className="flex flex-col w-72 sticky h-screen top-0">
@@ -24,7 +24,7 @@ function index() {
         <div className="bg-[#2b2f33] w-20  space-y-5">
           {DATA_CHANNEL.map((i, index) => (
             <div key={index} className="flex">
-              {activeChannel === i.id ? (
+              {ActiveChannel === i.id ? (
                 <div className="border-r-8 my-2 rounded-r-lg"></div>
               ) : null}
               <Channels image={i.image} id={i.id} state={setActiveChannel} />
