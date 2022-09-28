@@ -5,27 +5,27 @@ import { AccordionNormal } from "./AccordionNormal";
 const ACCORDION_DATA = [
   {
     id: 1,
-    item: [<PresentationChartLineIcon className="w-6 h-6" />, "summary"],
+    item: [<PresentationChartLineIcon className='w-6 h-6' />, "summary"],
     panel: ["1", "2"],
   },
   {
     id: 2,
-    item: [<BellAlertIcon className="w-6 h-6 " />, "PUBLISH"],
+    item: [<BellAlertIcon className='w-6 h-6' />, "PUBLISH"],
     panel: ["Compose", "Feed"],
   },
   {
     id: 3,
-    item: [<ChatBubbleLeftRightIcon className="w-6 h-6 " />, "engage"],
+    item: [<ChatBubbleLeftRightIcon className='w-6 h-6' />, "engage"],
     panel: ["2", "1"],
   },
   {
     id: 4,
-    item: [<AdjustmentsHorizontalIcon className="w-6 h-6 " />, "listen"],
+    item: [<AdjustmentsHorizontalIcon className='w-6 h-6' />, "listen"],
     panel: ["2", "1"],
   },
   {
     id: 5,
-    item: [<DocumentTextIcon className="w-6 h-6 " />, "report"],
+    item: [<DocumentTextIcon className='w-6 h-6' />, "report"],
     panel: ["2", "1"],
   },
 ];
