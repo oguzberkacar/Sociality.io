@@ -40,9 +40,9 @@ export default function Home() {
           </div>
           <div className="w-full">
             <NavigationCard
-              link="/posts"
-              title="deneme"
-              description={"deneme for Sociality.io"}
+              link="/project"
+              title="Project"
+              description={"Project for Sociality.io"}
             />
           </div>
         </div>

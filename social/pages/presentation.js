@@ -5,12 +5,13 @@ import PostMockup from "../components/PostMockup";
 
 function Presentation() {
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen flex items-center justify-center">
       <Splide
+      
         options={{
           rewind: false,
+          width:'90%',
           perPage: "1",
-          width: "100%",
           WheelEvent: false,
           autoplay: true,
           interval: "3000",
@@ -18,6 +19,8 @@ function Presentation() {
           releaseWheel: true,
           pagination: true,
           arrows: true,
+          
+          
         }}
         aria-label="My Favorite Images"
       >

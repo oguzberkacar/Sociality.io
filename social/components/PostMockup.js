@@ -14,7 +14,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function PostStat(Icon, count) {
+export function PostStat(Icon, count) {
   return (
     <div className="flex">
       <Icon className="w-6 h-6 mr-2 text-gray-500" />
@@ -23,7 +23,7 @@ function PostStat(Icon, count) {
   );
 }
 
-function PostMockup() {
+function  PostMockup() {
   const [status, setStatus] = React.useState("success");
 
   const changeStatus = () => {
@@ -41,7 +41,7 @@ function PostMockup() {
   };
 
   return (
-    <div className="flex justify-center items-center space-x-10 bg-zinc-300/50 dark:bg-zinc-500">
+    <div className="flex justify-center items-center px-20 space-x-10 bg-zinc-300/50 dark:bg-zinc-500">
       <div className="mb-5 mr-5">
         <div className="flex flex-col space-y-4">
           <h3 className="dark:text-white text-5xl">
